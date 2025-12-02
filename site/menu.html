@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Despre Noi - FU TUI SHAOLIN</title>
+    <link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER HERE -->
+<header>
+    <div id="top-header">
+        <div id="brand">
+            <img src="logo.png" alt="Logo">
+            <span class="brand-title"> FU TUI SHAOLIN </span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Acasa</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">Despre Noi</a>
+                </li>
+                <li class="active">
+                    <a href="menu.html">Meniu</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contacteaza-ne</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="photo-grid">
+    <img src="meniu1.png" onclick="openImage(this.src)">
+    <img src="meniu2.png" onclick="openImage(this.src)">
+    <img src="meniu3.png" onclick="openImage(this.src)">
+    <img src="meniu4.png" onclick="openImage(this.src)">
+    <img src="meniu5.png" onclick="openImage(this.src)">
+    <img src="meniu6.png" onclick="openImage(this.src)">
+</div>
+
+<!-- POPUP FULLSCREEN IMAGE -->
+<div id="image-popup" onclick="closeImage()">
+    <img id="popup-img" src="">
+</div>
+
+<script>
+function openImage(src) {
+    document.getElementById("popup-img").src = src;
+    document.getElementById("image-popup").style.display = "flex";
+}
+
+function closeImage() {
+    document.getElementById("image-popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
